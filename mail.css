@@ -1,0 +1,241 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    cursor: pointer;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    margin-top: 0;
+    padding: 10px 80px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://images.pexels.com/photos/22840557/pexels-photo-22840557/free-photo-of-modern-architecture.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+
+
+}
+
+.contact .content h2 {
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.contact .content p {
+    font-weight: 300;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.containerinfo {
+
+    display: flex;
+    width: 50%;
+    margin-left: 0;
+    flex-direction: column;
+}
+
+.containerinfo .box {
+
+    transition: 0.5s;
+    font-size: 20px;
+    transition-duration: 1s;
+
+}
+
+.container .containerinfo .box:hover {
+    transform: translate(100px);
+    transition-duration: 0.9s;
+}
+
+.container .containerinfo .box {
+    position: relative;
+    width: 300px;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .containerinfo .box .icon {
+    min-width: 60px;
+    border-radius: 50%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .containerinfo .box .text {
+    margin-left: 15px;
+    display: flex;
+    font-size: 15px;
+    color: #fff;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.container .containerinfo .box .text p {
+    margin-top: 6px;
+}
+
+.container .containerinfo .box .text h3 {
+    font-weight: 500;
+    color: #7de8f6;
+}
+
+.contentform {
+    background: rgba(253, 253, 249, 0.542);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 1px;
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 40%;
+    padding: 40px;
+    transition: 0.5;
+    transition-duration: 1s;
+    text-align: center;
+}
+
+.contentform:hover {
+    background: #fff;
+    transition-duration: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    box-shadow: 0 0px 50px 0px #585757ca;
+}
+
+.contentform h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #393737;
+}
+
+.contentform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contentform .inputbox input,
+.contentform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    outline: 0;
+    border-bottom: 2px solid #333333ab;
+    resize: none;
+
+
+}
+
+input,
+textarea {
+    background-color: #ffffff00;
+}
+
+.contentform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+
+.contentform .inputbox input:focus~span,
+.contentform .inputbox input:valid~span,
+.contentform .inputbox textarea:focus~span,
+.contentform .inputbox textarea:valid~span {
+    color: #ff0000;
+    font-size: 12px;
+    transform: translatey(-20px);
+
+}
+
+.contentform .inputbox input[type="submit"] {
+    width: 100px;
+    color: #fff;
+    background-color: #ee0e0e;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition-duration: 1s;
+}
+
+.contentform .inputbox input[type="submit"]:hover {
+    background-color: #00bcd4;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition-duration: 1s;
+}
+
+.contentform .inputbox input:valid~span,
+.contentform .inputbox textarea:valid~span {
+
+    color: #666;
+}
+@media(max-width: 1200px)
+{
+    .contact
+    {
+        padding: 50px 50px 20px 10px;
+    }
+    .container{
+        
+    }
+    .contentform{
+       
+       width: 100%;
+
+    }
+.container .containerinfo{
+    margin-top: 40px;
+    width: 20%;
+}
+.container .containerinfo .box .text{
+    
+  display: none;
+}
+.container .containerinfo .box:hover {
+    transform: translate(0px);
+}
+
+}
